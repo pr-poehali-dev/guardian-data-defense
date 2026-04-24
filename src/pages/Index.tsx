@@ -121,7 +121,7 @@ export default function Index() {
           <a href="#">Скидки</a>
           <a href="#">Адрес</a>
         </nav>
-        <button className="btn-cta">Заказать</button>
+        <a href="tel:+79174767904" className="btn-cta">Заказать</a>
       </header>
 
       <main>
@@ -136,9 +136,9 @@ export default function Index() {
               Круассаны, пироги, хлеб — всё, что вы любите, с пылу с жару. Пекарня La Buagette в Уфе. Скидка на всю выпечку после 19:00!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-5">
-              <button className="btn-cta" style={{ background: "var(--primary)", color: "white" }}>
-                Смотреть меню
-              </button>
+              <a href="tel:+79174767904" className="btn-cta" style={{ background: "var(--primary)", color: "white", textDecoration: "none" }}>
+                Позвонить и заказать
+              </a>
               <button className="btn-cta" style={{ background: "white" }}>
                 Как добраться
               </button>
