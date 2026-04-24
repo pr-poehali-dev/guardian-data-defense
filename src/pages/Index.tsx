@@ -4,61 +4,68 @@ export default function Index() {
       <div className="grain-overlay" />
 
       <header className="header">
-        <div className="logo">VINYL*DINER</div>
+        <div className="logo">LA*BUAGETTE</div>
         <nav>
           <a href="#">Меню</a>
           <a href="#">О нас</a>
-          <a href="#">Афиша</a>
-          <a href="#">Адреса</a>
+          <a href="#">Скидки</a>
+          <a href="#">Адрес</a>
         </nav>
-        <button className="btn-cta">Забронировать</button>
+        <button className="btn-cta">Заказать</button>
       </header>
 
       <main>
         <section className="hero">
           <div className="hero-content">
             <h1 className="hero-title">
-              БЕЗ ПОНТОВ,
+              СВЕЖО.
               <br />
-              ТОЛЬКО <span>ВКУС</span>
+              ВКУСНО. <span>Каждый день.</span>
             </h1>
             <p className="text-base md:text-lg lg:text-xl mb-8 md:mb-10 leading-relaxed text-[#555]">
-              Эстетика 70-х в современной подаче. Локальные продукты, огненные блюда и атмосфера для настоящих ценителей.
+              Круассаны, пироги, хлеб — всё, что вы любите, с пылу с жару. Пекарня La Buagette в Уфе. Скидка на всю выпечку после 19:00!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-5">
               <button className="btn-cta" style={{ background: "var(--primary)", color: "white" }}>
-                Заказать
+                Смотреть меню
               </button>
               <button className="btn-cta" style={{ background: "white" }}>
-                Смотреть меню
+                Как добраться
               </button>
             </div>
           </div>
-          <div className="hero-img">
+          <div
+            className="hero-img"
+            style={{
+              backgroundImage: `url("https://cdn.poehali.dev/projects/6771503c-c87f-4ea3-a999-6ca71472d6bc/files/2a529b55-2c05-4afc-ad9b-c92900387de3.jpg")`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          >
             <div className="sticker">
-              СВЕЖАК
+              СКИДКА
               <br />
-              КАЖДЫЙ ДЕНЬ
+              ПОСЛЕ 19:00
             </div>
             <div className="floating-tag hidden md:block" style={{ top: "20%", left: "10%" }}>
-              #ЭСТЕТИКА
+              #СВЕЖАЯВЫПЕЧКА
             </div>
             <div className="floating-tag hidden md:block" style={{ bottom: "30%", right: "20%" }}>
-              ОГОНЬ
+              ВАУ!
             </div>
           </div>
         </section>
 
         <div className="marquee">
           <div className="marquee-content">
-            &nbsp; * БУРГЕРЫ КОТОРЫЕ РВУТ * КРАФТОВЫЕ КОКТЕЙЛИ * ТОЛЬКО РЕТРО ВАЙБ * ОТКРЫТЫ ДО 2:00 * ЛУЧШИЕ В ГОРОДЕ *
-            БУРГЕРЫ КОТОРЫЕ РВУТ * КРАФТОВЫЕ КОКТЕЙЛИ * ТОЛЬКО РЕТРО ВАЙБ * ОТКРЫТЫ ДО 2:00 * ЛУЧШИЕ В ГОРОДЕ
+            &nbsp; * КРУАССАНЫ КАЖДОЕ УТРО * ПИРОГИ КАК У БАБУШКИ * ХЛЕБ НА ЗАКВАСКЕ * СКИДКА ПОСЛЕ 19:00 * УФА, ЭНТУЗИАСТОВ 16 *
+            КРУАССАНЫ КАЖДОЕ УТРО * ПИРОГИ КАК У БАБУШКИ * ХЛЕБ НА ЗАКВАСКЕ * СКИДКА ПОСЛЕ 19:00 * УФА, ЭНТУЗИАСТОВ 16
           </div>
         </div>
 
         <section className="section-padding">
           <div className="section-header">
-            <h2 className="section-title">ВЫБОР ШЕФА</h2>
+            <h2 className="section-title">НАШИ ХИТЫ</h2>
             <a
               href="#"
               className="text-sm md:text-base"
@@ -69,12 +76,12 @@ export default function Index() {
           </div>
 
           <div className="menu-grid">
-            {/* Item 1 */}
+            {/* Круассан */}
             <div className="menu-card">
               <span className="menu-tag">Хит продаж</span>
               <img
-                src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                alt="Классический бургер"
+                src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                alt="Круассан"
               />
               <div className="menu-card-body">
                 <div
@@ -85,23 +92,23 @@ export default function Index() {
                     marginBottom: "10px",
                   }}
                 >
-                  <h3>Классика</h3>
-                  <span className="price">1 400 ₽</span>
+                  <h3>Классический круассан</h3>
+                  <span className="price">120 ₽</span>
                 </div>
                 <p style={{ fontSize: "14px", color: "#666" }}>
-                  Тройной смэш из мраморной говядины, фирменный соус, маринованные огурцы на бриоши.
+                  Слоёное масляное тесто, хрустящая корочка, нежная сердцевина — завтрак мечты.
                 </p>
               </div>
             </div>
 
-            {/* Item 2 */}
+            {/* Пирог */}
             <div className="menu-card">
               <span className="menu-tag" style={{ background: "var(--secondary)" }}>
-                Острое
+                Любимое
               </span>
               <img
-                src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                alt="Неоновая пицца"
+                src="https://cdn.poehali.dev/projects/6771503c-c87f-4ea3-a999-6ca71472d6bc/files/b0be26a7-28a8-45b1-a9e0-95cd3b4835d0.jpg"
+                alt="Домашний пирог"
               />
               <div className="menu-card-body">
                 <div
@@ -112,21 +119,21 @@ export default function Index() {
                     marginBottom: "10px",
                   }}
                 >
-                  <h3>Электро Пепперони</h3>
-                  <span className="price">1 800 ₽</span>
+                  <h3>Домашний пирог</h3>
+                  <span className="price">280 ₽</span>
                 </div>
-                <p style={{ fontSize: "14px", color: "#666" }}>Двойная пепперони, острый мёд, тесто на закваске.</p>
+                <p style={{ fontSize: "14px", color: "#666" }}>Пироги с яблоком, вишней или капустой — как у бабушки, только лучше.</p>
               </div>
             </div>
 
-            {/* Item 3 */}
+            {/* Хлеб */}
             <div className="menu-card">
               <span className="menu-tag" style={{ background: "var(--accent)", color: "var(--dark)" }}>
-                Популярное
+                Свежий
               </span>
               <img
-                src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                alt="Диско Сауэр"
+                src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                alt="Хлеб на закваске"
               />
               <div className="menu-card-body">
                 <div
@@ -137,11 +144,11 @@ export default function Index() {
                     marginBottom: "10px",
                   }}
                 >
-                  <h3>Диско Сауэр</h3>
-                  <span className="price">1 200 ₽</span>
+                  <h3>Хлеб на закваске</h3>
+                  <span className="price">220 ₽</span>
                 </div>
                 <p style={{ fontSize: "14px", color: "#666" }}>
-                  Джин, цветок бузины, голубой чай и съедобная золотая пыльца.
+                  Ремесленный хлеб с хрустящей корочкой и мягким мякишем. Выпекаем каждое утро.
                 </p>
               </div>
             </div>
@@ -150,45 +157,49 @@ export default function Index() {
 
         <section className="retro-vibe">
           <div>
-            <h2 className="vibe-title">ВАЙБ-ЧЕК ПРОЙДЕН.</h2>
+            <h2 className="vibe-title">ТЕПЛО. ВКУСНО. СВЕЖО.</h2>
             <p className="vibe-text">
-              Мы не просто кормим. Мы создаём моменты. От плейлиста хип-хопа 90-х до диванов в стиле 70-х — каждый уголок
-              продуман для твоего идеального кадра. Бронь не нужна, просто приходи с настроением.
+              La Buagette — это не просто пекарня. Это место, куда хочется возвращаться каждый день за любимым круассаном и хорошим настроением. Выпечка готовится с утра и пахнет так, что соседи завидуют. А после 19:00 — скидка на всё. Просто приходи!
             </p>
             <button className="btn-cta" style={{ background: "var(--dark)", color: "white", borderColor: "white" }}>
-              Наша история
+              О нас
             </button>
           </div>
-          <div className="vibe-img"></div>
+          <div
+            className="vibe-img"
+            style={{
+              backgroundImage: `url("https://cdn.poehali.dev/projects/6771503c-c87f-4ea3-a999-6ca71472d6bc/files/9646e557-aa80-4153-8cf0-c555ecbc941d.jpg")`,
+            }}
+          ></div>
         </section>
 
         <section className="section-padding">
           <h2 className="section-title" style={{ marginBottom: "40px", textAlign: "center" }}>
-            @VINYL.DINER
+            @LA.BUAGETTE
           </h2>
           <div className="social-grid">
             <div className="social-item">
               <img
-                src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                alt="Инста 1"
+                src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                alt="Круассаны"
               />
             </div>
             <div className="social-item">
               <img
-                src="https://images.unsplash.com/photo-1534353473418-4cfa6c56fd38?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                alt="Инста 2"
+                src="https://cdn.poehali.dev/projects/6771503c-c87f-4ea3-a999-6ca71472d6bc/files/2a529b55-2c05-4afc-ad9b-c92900387de3.jpg"
+                alt="Выпечка"
               />
             </div>
             <div className="social-item">
               <img
-                src="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                alt="Инста 3"
+                src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                alt="Хлеб"
               />
             </div>
             <div className="social-item">
               <img
-                src="https://images.unsplash.com/photo-1559339352-11d035aa65de?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                alt="Инста 4"
+                src="https://cdn.poehali.dev/projects/6771503c-c87f-4ea3-a999-6ca71472d6bc/files/b0be26a7-28a8-45b1-a9e0-95cd3b4835d0.jpg"
+                alt="Пироги"
               />
             </div>
           </div>
@@ -197,9 +208,9 @@ export default function Index() {
 
       <footer>
         <div>
-          <div className="footer-logo">VINYL*DINER</div>
+          <div className="footer-logo">LA*BUAGETTE</div>
           <p style={{ color: "#666", lineHeight: 1.6 }}>
-            Твоё место для еды высокого качества и лоу-фай атмосферы. С 2024, но ощущается как 1974.
+            Свежая вкусная выпечка каждый день. Круассаны, пироги, хлеб — всё самое любимое.
           </p>
         </div>
         <div className="footer-links">
@@ -217,29 +228,30 @@ export default function Index() {
             </li>
             <li>
               <a href="#" style={{ color: "inherit", textDecoration: "none" }}>
-                Политика
+                Акции
               </a>
             </li>
             <li>
               <a href="#" style={{ color: "inherit", textDecoration: "none" }}>
-                Условия
+                Контакты
               </a>
             </li>
           </ul>
         </div>
-        <div className="footer-links">
+        <div className="footer-hours">
           <h4>Часы работы</h4>
           <ul>
-            <li>Вт-Чт: 12:00 - 23:00</li>
-            <li>Пт-Сб: 12:00 - 02:00</li>
-            <li>Вс: 11:00 - 21:00</li>
-            <li>Пн: Выходной</li>
+            <li>Пн–Пт: 07:00–21:00</li>
+            <li>Сб–Вс: 08:00–21:00</li>
+            <li style={{ color: "var(--primary)", fontWeight: 700 }}>Скидка на всё после 19:00!</li>
           </ul>
         </div>
-        <div className="footer-bottom">
-          <span>2025 VINYL DINER</span>
-          <span>ВКУС КЛАССИКИ</span>
-          <span>IG / TW / TK</span>
+        <div>
+          <h4>Адрес</h4>
+          <p style={{ color: "#666", lineHeight: 1.8 }}>
+            г. Уфа,<br />
+            ул. Энтузиастов, 16
+          </p>
         </div>
       </footer>
     </>
