@@ -139,9 +139,9 @@ export default function Index() {
               <a href="tel:+79174767904" className="btn-cta" style={{ background: "var(--primary)", color: "white", textDecoration: "none" }}>
                 Позвонить и заказать
               </a>
-              <button className="btn-cta" style={{ background: "white" }}>
+              <a href="https://yandex.ru/maps/?text=Уфа+Энтузиастов+16" target="_blank" rel="noopener noreferrer" className="btn-cta" style={{ background: "white", textDecoration: "none" }}>
                 Как добраться
-              </button>
+              </a>
             </div>
           </div>
           <div
@@ -345,6 +345,15 @@ export default function Index() {
             style={{ display: "inline-block", marginTop: "12px", color: "var(--primary)", fontWeight: 800, textDecoration: "none", fontSize: "16px" }}
           >
             +7 917 476-79-04
+          </a>
+          <br />
+          <a
+            href="https://yandex.ru/maps/?text=Уфа+Энтузиастов+16"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ display: "inline-block", marginTop: "8px", color: "#666", fontWeight: 700, textDecoration: "underline", fontSize: "14px" }}
+          >
+            Открыть на карте →
           </a>
         </div>
       </footer>
