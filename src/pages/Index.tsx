@@ -340,6 +340,12 @@ export default function Index() {
             г. Уфа,<br />
             ул. Энтузиастов, 16
           </p>
+          <a
+            href="tel:+79174767904"
+            style={{ display: "inline-block", marginTop: "12px", color: "var(--primary)", fontWeight: 800, textDecoration: "none", fontSize: "16px" }}
+          >
+            +7 917 476-79-04
+          </a>
         </div>
       </footer>
     </>
